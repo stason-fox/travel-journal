@@ -1,38 +1,89 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  padding-bottom: 4rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  height: 5rem;
+  background-color: #045FD0;
+}
+
+.navbar > span {
+  font-size: 1.75rem;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar > h1 {
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding-left: 0.5rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card--page {
+  display: flex;
+  justify-content: center;
+}
+
+.card--container {
+  display: flex;
+  justify-content: center;
+  max-width: 960px;
+  padding-top: 4rem;
+}
+
+.location-image {
+  max-width: 400px;
+  height: auto;
+  align-self: start;
+  border-radius: 0.5rem;
+}
+
+.card--text-container {
+  align-self: center;  
+  flex: 1 1 auto;
+  padding-left: 2rem;
+}
+
+.card--text-container > h1 {
+  font-size: 2rem;
+}
+
+.card--text-container > p {
+  line-height: 1.5;
+  padding-top: 1rem;
+}
+
+.card--google-maps {
+  padding-bottom: 0.5rem;
+}
+
+.card--marker {
+  color: #F55A5A;
+}
+
+.card--location {
+  padding-left: 0.5rem;
+}
+
+.card--maps-link {
+  padding-left: 3rem;
+}
+
+.card--maps-link > a {
+  color: #918E9B;
+}
+
+.dates {
+  font-weight: bold;
+  padding-top: 2rem;
 }
